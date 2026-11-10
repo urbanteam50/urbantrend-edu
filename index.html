@@ -120,7 +120,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 /* courses */
 #courses{background:var(--surface);border-block:1px solid var(--line);scroll-margin-top:60px}
-.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:28px;scrollbar-width:thin}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
 .tab{flex:none;padding:12px 20px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font-family:var(--display);font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;white-space:nowrap}
 .tab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:var(--on-navy)}
 .panel{display:grid;gap:28px}
@@ -331,6 +331,9 @@ footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:cent
   .promise,.apply{padding:24px}
   .rv-stage{grid-template-columns:1fr;height:560px}
   .rv-col:nth-child(2){display:none}
+  .tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+  .tab{justify-content:center;padding:10px 6px;font-size:14px;gap:6px}
+  .tab[data-c]::before{width:6px;height:6px}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important}

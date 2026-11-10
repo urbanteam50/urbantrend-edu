@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="미용실연구소 오공원장의 현실경영·세무·노무·마케팅·숏폼 교육 소개와 신청">
+<meta property="og:title" content="어쩌다원장 교육 | 미용실연구소 오공원장">
+<meta property="og:description" content="어쩌다가 원장이 된, 원장님들을 위한 미용실에 진짜 필요한 완결편 교육">
+<meta property="og:image" content="img/profile.jpg">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>어쩌다원장 교육</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800;900&family=Noto+Sans+KR:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: 신뢰(숫자·이력·후기)로 설득 → 과정별 탭 페이지 → 각 탭 하단 관련 영상 + 신청. 네이비 잉크 + 시그널 레드 한 점 */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#0f1c2e; --muted:#5a6577; --line:#dde1e8;
+  --navy:#0f2033; --navy-2:#18304a; --on-navy:#eef2f7; --on-navy-muted:#9fb0c4;
+  --red:#d9302a; --red-soft:#fbe9e8; --sky:#7fb4e8;
+  /* 구역별 배경 */
+  --tint-blue:#eaf1fa; --tint-mint:#e8f4ef; --tint-blush:#f8ecea;
+  /* 과정별 테마 컬러 */
+  --c-mgmt:#1f4e8c; --c-mgmt-soft:#e6eef8;
+  --c-taxlab:#0f766e; --c-taxlab-soft:#e3f3f1;
+  --c-mkt:#c2410c; --c-mkt-soft:#fdeee6;
+  --c-sf:#6d3fd1; --c-sf-soft:#efe9fc;
+  --c-cons:#9a6a00; --c-cons-soft:#f8f0dc;
+  --display:"Gothic A1","Noto Sans KR",system-ui,sans-serif;
+  --body:"Noto Sans KR",system-ui,-apple-system,sans-serif;
+  --num:"Space Grotesk","Gothic A1",system-ui,sans-serif;
+  --gut-l:max(16px,env(safe-area-inset-left,0px)); --gut-r:max(16px,env(safe-area-inset-right,0px));
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b1420; --surface:#121e2d; --ink:#e8edf4; --muted:#9aa7b8; --line:#243347;
+  --navy:#08111c; --navy-2:#132438; --on-navy:#eef2f7; --on-navy-muted:#93a5ba;
+  --red:#ff5a4f; --red-soft:#3a1a1a; --sky:#8fc1f2;
+  --tint-blue:#0f1d2e; --tint-mint:#0e1f1c; --tint-blush:#1f1517;
+  --c-mgmt:#6fa3e6; --c-mgmt-soft:#14243a; --c-taxlab:#3cc2b3; --c-taxlab-soft:#0f2a28;
+  --c-mkt:#ff8a50; --c-mkt-soft:#2d1a10; --c-sf:#a989f5; --c-sf-soft:#21183a; --c-cons:#e0b145; --c-cons-soft:#2a2210; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0b1420; --surface:#121e2d; --ink:#e8edf4; --muted:#9aa7b8; --line:#243347;
+  --navy:#08111c; --navy-2:#132438; --on-navy:#eef2f7; --on-navy-muted:#93a5ba;
+  --red:#ff5a4f; --red-soft:#3a1a1a; --sky:#8fc1f2;
+  --tint-blue:#0f1d2e; --tint-mint:#0e1f1c; --tint-blush:#1f1517;
+  --c-mgmt:#6fa3e6; --c-mgmt-soft:#14243a; --c-taxlab:#3cc2b3; --c-taxlab-soft:#0f2a28;
+  --c-mkt:#ff8a50; --c-mkt-soft:#2d1a10; --c-sf:#a989f5; --c-sf-soft:#21183a; --c-cons:#e0b145; --c-cons-soft:#2a2210; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;word-break:keep-all;overflow-wrap:break-word}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.3;margin:0}
+p{margin:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--red)}
+section{padding-block:72px}
+.sec-head{display:grid;gap:12px;margin-bottom:36px;max-width:720px}
+.sec-head h2{font-size:clamp(26px,4vw,36px);font-weight:800}
+.sec-head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 28px;border-radius:999px;background:var(--red);color:#fff;font-weight:700;font-size:17px;text-decoration:none;font-family:var(--display);transition:transform .15s ease, box-shadow .15s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(217,48,42,.35)}
+.btn:focus-visible,.tab:focus-visible,.chip:focus-visible,.vid:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.btn.ghost{background:transparent;border:1.5px solid currentColor;color:inherit}
+.btn.ghost:hover{box-shadow:none}
+
+/* top bar */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy)}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--navy);color:var(--on-navy)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px}
+.brand{font-family:var(--display);font-weight:800;font-size:16px}
+.brand small{display:block;font-size:11px;font-weight:500;color:var(--on-navy-muted);letter-spacing:.04em}
+.topbar .btn{padding:10px 18px;font-size:14px}
+
+/* hero */
+.hero{background:var(--navy);color:var(--on-navy);padding-block:64px 80px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid var(--navy-2);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.hero .kicker{font-size:15px;color:var(--on-navy-muted);border-bottom:1px solid var(--navy-2);padding-bottom:12px;margin-bottom:20px}
+.hero h1{font-size:clamp(34px,6vw,60px);font-weight:900;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--red);display:block}
+.hero .sub{margin-top:20px;font-size:18px;color:var(--on-navy-muted)}
+.pick-label{margin-top:28px;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--on-navy-muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:999px;background:var(--navy-2);border:1.5px solid transparent;font-size:15px;font-weight:700;font-family:var(--display);text-decoration:none;color:var(--on-navy);transition:border-color .15s, background .15s}
+.chip::after{content:"→";font-family:var(--num);opacity:.6;transition:transform .15s}
+.chip:hover{border-color:var(--red);background:transparent}
+.chip:hover::after{transform:translateX(3px);opacity:1}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;border-radius:20px;display:block;aspect-ratio:1/1;object-fit:cover}
+.hero-photo .tag{position:absolute;left:-14px;bottom:20px;background:var(--surface);color:var(--ink);padding:12px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:13px;line-height:1.5}
+.hero-photo .tag b{display:block;font-family:var(--display);font-size:16px}
+
+/* proof numbers */
+.proof{background:var(--surface);border-bottom:1px solid var(--line)}
+.proof .wrap{padding-block:48px}
+.proof-lead{text-align:center;margin-bottom:32px;display:grid;gap:8px}
+.proof-lead h2{font-size:clamp(22px,3.4vw,30px);font-weight:900}
+.proof-lead h2 span{color:var(--red)}
+.proof-lead p{color:var(--muted);font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:8px 20px;border-left:1px solid var(--line);display:grid;gap:4px;align-content:start}
+.stat:first-child{border-left:0}
+.stat .n{font-family:var(--num);font-weight:700;font-size:clamp(30px,4vw,42px);line-height:1.1;font-variant-numeric:tabular-nums}
+.stat .n small{font-size:.5em;margin-left:2px;font-family:var(--display)}
+.stat .l{color:var(--muted);font-size:14px}
+
+/* philosophy */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.story .body{display:grid;gap:18px;color:var(--muted);max-width:62ch}
+.story .body strong{color:var(--ink)}
+.promise{background:var(--navy);color:var(--on-navy);border-radius:20px;padding:36px;display:grid;gap:14px}
+.promise h3{font-size:clamp(22px,3vw,28px);font-weight:800}
+.promise .big{font-family:var(--num);font-size:clamp(40px,6vw,56px);font-weight:700;color:var(--red);line-height:1}
+.promise ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;border-top:1px solid var(--navy-2);padding-top:16px}
+.promise li{display:flex;gap:10px;font-size:15px;color:var(--on-navy-muted)}
+.promise li b{color:var(--on-navy)}
+.promise li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--red);margin-top:10px}
+
+/* courses */
+#courses{background:var(--surface);border-block:1px solid var(--line);scroll-margin-top:60px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:28px;scrollbar-width:thin}
+.tab{flex:none;padding:12px 20px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font-family:var(--display);font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:var(--on-navy)}
+.panel{display:grid;gap:28px}
+.panel-head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;border-bottom:2px solid var(--ink);padding-bottom:20px}
+.panel-head h3{font-size:clamp(24px,4vw,34px);font-weight:900}
+.panel-head .desc{color:var(--muted);margin-top:8px;max-width:60ch}
+.price{text-align:right}
+.price .won{font-family:var(--num);font-weight:700;font-size:clamp(32px,5vw,44px);line-height:1;font-variant-numeric:tabular-nums}
+.price .won small{font-family:var(--display);font-size:.45em;margin-left:2px}
+.price .vat{font-size:13px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.fact{background:var(--bg);border-radius:14px;padding:16px 18px;display:grid;gap:2px;min-width:0;align-content:start}
+.fact .k{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--muted)}
+.fact .v{font-weight:700;font-size:15px;line-height:1.55}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:12px;align-content:start;min-width:0}
+.box h4{margin:0;font-family:var(--display);font-size:17px;font-weight:800}
+.box ul{margin:0;padding-left:1.1em;display:grid;gap:6px}
+.box li::marker{color:var(--red)}
+.box li b{font-weight:700}
+.box .sub{color:var(--muted);font-size:14px}
+.box.note{background:var(--red-soft);border-color:transparent}
+.part-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.part{background:var(--bg);border-radius:16px;padding:22px 24px;min-width:0}
+.part header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.part .pn{flex:none;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--on-navy);display:grid;place-items:center;font-family:var(--num);font-weight:700}
+.part h4{margin:0;font-family:var(--display);font-size:18px;font-weight:800;flex:1}
+.part .cnt{font-size:13px;color:var(--muted);font-weight:700}
+.part ol{margin:0;padding:0;list-style:none;display:grid;gap:4px}
+.part li{display:grid;grid-template-columns:28px 1fr;font-size:15px}
+.part li span{font-family:var(--num);color:var(--muted);font-variant-numeric:tabular-nums}
+.part ul{margin:0;padding-left:1.1em;display:grid;gap:6px;font-size:15px}
+.part ul li{display:list-item}
+.part ul li::marker{color:var(--red)}
+.sched{display:grid;gap:8px}
+.sched div{display:grid;grid-template-columns:90px 1fr;gap:12px;font-size:15px;padding-block:8px;border-bottom:1px dashed var(--line)}
+.sched div:last-child{border-bottom:0}
+.sched b{font-family:var(--display)}
+
+/* cases */
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.case{background:var(--navy);color:var(--on-navy);border-radius:16px;padding:20px 22px;display:grid;gap:10px;align-content:start;min-width:0}
+.case q{quotes:none;font-size:15px;line-height:1.7}
+.case q::before{content:"“";font-family:var(--num);color:var(--red);font-size:28px;line-height:0;vertical-align:-10px;margin-right:4px}
+.case span{font-size:12px;color:var(--on-navy-muted)}
+
+/* data proof (shortform) */
+.result{display:grid;gap:16px}
+.result-head{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.kpi{border-radius:16px;padding:20px;background:var(--navy);color:var(--on-navy);display:grid;gap:4px}
+.kpi .k{font-size:13px;color:var(--on-navy-muted)}
+.kpi .v{font-family:var(--num);font-weight:700;font-size:clamp(24px,3.4vw,32px);line-height:1.15;font-variant-numeric:tabular-nums}
+.kpi .v small{font-family:var(--display);font-size:.55em;margin-left:2px}
+.kpi .d{font-size:13px;color:var(--on-navy-muted)}
+.kpi .d b{color:var(--red)}
+.shot{margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.shot a{display:block}
+.shot img{display:block;width:100%}
+.shot figcaption{padding:12px 16px;font-size:13px;color:var(--muted);background:var(--surface);border-top:1px solid var(--line)}
+
+/* related videos */
+.vids-wrap{display:grid;gap:14px}
+.vids-wrap h4{margin:0;font-family:var(--display);font-size:18px;font-weight:800;display:flex;align-items:center;gap:10px}
+.vids-wrap h4 svg{width:26px;height:18px;flex:none}
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.vid{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:var(--bg);text-decoration:none;min-width:0;transition:border-color .15s, transform .15s}
+.vid:hover{border-color:var(--red);transform:translateY(-2px)}
+.vid .play{width:44px;height:44px;border-radius:12px;background:var(--red);display:grid;place-items:center}
+.vid .play svg{width:16px;height:16px;margin-left:2px}
+.vid .tt{font-weight:700;font-size:14px;line-height:1.45;min-width:0}
+.vid .tt small{display:block;font-weight:500;font-size:12px;color:var(--muted);margin-top:2px}
+
+.apply{background:var(--navy);color:var(--on-navy);border-radius:20px;padding:28px 32px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.apply h4{margin:0;font-family:var(--display);font-size:20px;font-weight:800}
+.apply p{color:var(--on-navy-muted);font-size:14px;margin-top:4px}
+
+/* instructor */
+.inst{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
+.inst-card{position:sticky;top:90px;display:grid;gap:16px}
+.inst-card img{width:100%;border-radius:20px;display:block}
+.inst-card .name{font-family:var(--display);font-size:24px;font-weight:900}
+.inst-card .roles{font-size:14px;color:var(--muted);line-height:1.8}
+.social{display:flex;flex-wrap:wrap;gap:8px}
+.social a{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;background:var(--surface);border:1px solid var(--line);text-decoration:none;font-weight:700;font-size:14px}
+.social a:hover{border-color:var(--ink)}
+.social svg{width:18px;height:18px;flex:none}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line);display:grid}
+.timeline li{position:relative;padding:0 0 22px 24px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--muted)}
+.timeline li.hl::before{background:var(--red);border-color:var(--red)}
+.timeline .y{font-family:var(--num);font-weight:700;font-size:15px;color:var(--muted);font-variant-numeric:tabular-nums}
+.timeline li.hl .y{color:var(--red)}
+.timeline .t{font-weight:500}
+.hero-info{list-style:none;margin:20px 0 0;padding:16px 0 0;border-top:1px solid var(--navy-2);display:grid;gap:8px;font-size:15px;color:var(--on-navy-muted)}
+.hero-info li{display:flex;flex-wrap:wrap;gap:4px 10px}
+.hero-info b{color:var(--on-navy);font-family:var(--display);font-weight:800}
+.tl-sub{list-style:none;margin:8px 0 0;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;display:grid;gap:4px;font-size:15px}
+.tl-sub li{padding:0}
+.tl-sub li::before{display:none}
+.tl-sub b{font-family:var(--num);color:var(--muted);font-weight:700;margin-right:8px;font-variant-numeric:tabular-nums}
+
+.media{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.media img{display:block;width:100%}
+.media figcaption{padding:16px 20px;font-size:14px;color:var(--muted)}
+.media figcaption b{color:var(--ink);font-family:var(--display);display:block;font-size:16px;margin-bottom:2px}
+
+/* reviews — 위로 계속 올라오는 후기 */
+#reviews{background:var(--navy);color:var(--on-navy)}
+#reviews .sec-head p{color:var(--on-navy-muted)}
+.rv-stage{position:relative;height:640px;overflow:hidden;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 12%,#000 88%,transparent 100%);
+          mask-image:linear-gradient(to bottom,transparent 0,#000 12%,#000 88%,transparent 100%)}
+.rv-col{min-width:0;overflow:hidden}
+.rv-track{display:grid;gap:16px;animation:rv-up var(--dur,60s) linear infinite}
+.rv-col:nth-child(2) .rv-track{--dur:74s}
+.rv-col:nth-child(3) .rv-track{--dur:66s}
+.rv-stage:hover .rv-track{animation-play-state:paused}
+@keyframes rv-up{from{transform:translateY(0)}to{transform:translateY(calc(-50% - 8px))}}
+.rv{margin:0;background:var(--navy-2);border-radius:16px;padding:22px;display:grid;gap:12px}
+.rv q{quotes:none;font-size:15px;line-height:1.75}
+.rv footer{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:13px;color:var(--on-navy-muted)}
+.rv .tg{flex:none;padding:3px 10px;border-radius:999px;background:var(--red);color:#fff;font-size:12px;font-weight:700}
+.rv-src{display:none}
+.caps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}
+.caps a{display:block;border-radius:12px;overflow:hidden;aspect-ratio:3/4;background:var(--navy-2)}
+.caps img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .3s}
+.caps a:hover img{transform:scale(1.04)}
+.caps-note{font-size:13px;color:var(--on-navy-muted);margin-top:10px}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery img{width:100%;display:block;border-radius:14px}
+
+/* info + final */
+.info{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.info .box{background:var(--surface)}
+.final{background:var(--navy);color:var(--on-navy);text-align:center}
+.final h2{font-size:clamp(26px,4.5vw,42px);font-weight:900}
+.final p{color:var(--on-navy-muted);margin:16px auto 28px;max-width:52ch}
+.final .chips{justify-content:center;margin-top:28px}
+footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:center}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(5,10,18,.92);display:grid;place-items:center;padding:24px}
+.lb img{max-width:100%;max-height:90vh;border-radius:8px}
+.lb button{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));right:calc(16px + env(safe-area-inset-right,0px));background:#fff;color:#000;border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer}
+
+/* 구역별 배경 구분 */
+#story{background:var(--tint-blue)}
+#instructor{background:var(--tint-mint)}
+#gallery{background:var(--tint-blush)}
+.final{background:var(--red);color:#fff}
+.final p{color:#fff;opacity:.9}
+.final .btn{background:#fff;color:#c4271f}
+.final .btn:hover{box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.final .chip{background:rgba(255,255,255,.16);color:#fff}
+.final .chip:hover{border-color:#fff;background:transparent}
+
+/* 과정별 테마 컬러 */
+[data-c="mgmt"]{--c:var(--c-mgmt);--c-soft:var(--c-mgmt-soft)}
+[data-c="taxlab"]{--c:var(--c-taxlab);--c-soft:var(--c-taxlab-soft)}
+[data-c="mkt"]{--c:var(--c-mkt);--c-soft:var(--c-mkt-soft)}
+[data-c="sf"]{--c:var(--c-sf);--c-soft:var(--c-sf-soft)}
+[data-c="cons"]{--c:var(--c-cons);--c-soft:var(--c-cons-soft)}
+.chip[data-c]::before,.tab[data-c]::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c);flex:none}
+.tab{display:inline-flex;align-items:center;gap:8px}
+.tab[data-c][aria-selected="true"]{background:var(--c);border-color:var(--c);color:var(--surface)}
+.tab[data-c][aria-selected="true"]::before{background:var(--surface)}
+.panel .eyebrow{color:var(--c)}
+.panel-head{border-bottom-color:var(--c)}
+.panel .price .won{color:var(--c)}
+.panel .fact,.panel .part{background:var(--c-soft)}
+.panel .part .pn{background:var(--c);color:var(--surface)}
+.panel .box.note{background:var(--surface);border:1.5px solid var(--c)}
+.panel .box li::marker,.panel .part ul li::marker{color:var(--c)}
+.panel .case,.panel .kpi{background:var(--c);color:var(--surface)}
+.panel .case span,.panel .kpi .k,.panel .kpi .d{color:var(--surface);opacity:.85}
+.panel .case q::before,.panel .kpi .d b{color:var(--surface)}
+.panel .apply{background:var(--c);color:var(--surface)}
+.panel .apply p{color:var(--surface);opacity:.85}
+.panel .apply .btn{background:var(--surface);color:var(--c)}
+.panel .apply .btn:hover{box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.sub-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-top:8px}
+.sub-head h4{margin:0;font-family:var(--display);font-size:22px;font-weight:900;color:var(--c)}
+.sub-head span{color:var(--muted);font-size:14px;font-weight:700}
+
+@media (max-width:860px){
+  .hero .wrap,.story,.inst,.two,.part-grid,.info{grid-template-columns:1fr}
+  .hero-photo{max-width:340px}
+  .inst-card{position:static}
+  .stats{grid-template-columns:repeat(2,1fr);row-gap:24px}
+  .stat:nth-child(3){border-left:0}
+  .facts,.vids,.cases,.result-head{grid-template-columns:1fr 1fr}
+  .caps{grid-template-columns:repeat(2,1fr)}
+  .panel-head{grid-template-columns:1fr}
+  .price{text-align:left}
+  .apply{grid-template-columns:1fr}
+  .rv-stage{grid-template-columns:1fr 1fr;height:600px}
+  .rv-col:nth-child(3){display:none}
+}
+@media (max-width:540px){
+  section{padding-block:56px}
+  .facts,.gallery,.vids,.cases,.result-head{grid-template-columns:1fr}
+  .topbar .brand small{display:none}
+  .promise,.apply{padding:24px}
+  .rv-stage{grid-template-columns:1fr;height:560px}
+  .rv-col:nth-child(2){display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important}
+  .rv-track{animation:none}
+  .rv-stage{height:auto;-webkit-mask-image:none;mask-image:none}
+}
+</style>
+
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">미용실연구소 · 어쩌다원장<small>오공원장의 원장님 교육</small></div>
+    <a class="btn" href="#courses">교육 신청하기</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">어쩌다가 원장이 된, 원장님들을 위한</p>
+      <h1>미용실에 진짜 필요한<em>완결편 교육</em></h1>
+      <p class="sub">직원은 힘들면 그만두면 되지만, 원장은 힘들면 폐업해야 됩니다.<br>할 거면 제대로 하고, 제대로 못 할 거면 폐업하는 게 정답입니다.</p>
+      <p class="pick-label">과정을 눌러 내용 보고 신청하기</p>
+      <nav class="chips" aria-label="교육 과정 바로가기">
+        <a class="chip" href="#management" data-c="mgmt">현실경영</a>
+        <a class="chip" href="#taxlabor" data-c="taxlab">세무 + 노무</a>
+        <a class="chip" href="#marketing" data-c="mkt">마케팅</a>
+        <a class="chip" href="#shortform" data-c="sf">숏폼</a>
+        <a class="chip" href="#consulting" data-c="cons">1:1 컨설팅</a>
+      </nav>
+      <div class="ctas">
+        <a class="btn ghost" href="#instructor">강사 이력 보기</a>
+      </div>
+      <ul class="hero-info">
+        <li><b>강의 일정</b> 수강 최소 6명 ~ 최대 10명, 일정 조율 후 진행 (소수 인원 과외 방식)</li>
+        <li><b>강의 장소</b> 분당 서현역 스타랩 아카데미</li>
+        <li><b>출장 강의</b> (타 지역 강의 희망 시) 최소 인원 6명 이상 모이면 출장 가능</li>
+      </ul>
+    </div>
+    <div class="hero-photo">
+      <img src="img/profile.jpg" alt="오공원장 프로필 사진">
+      <div class="tag"><b>오공원장</b>어반트랜드 대표 · 미용실연구소</div>
+    </div>
+  </div>
+</header>
+
+<div class="proof">
+  <div class="wrap">
+    <div class="proof-lead">
+      <h2>미용계에서 <span>10년 넘게 쉬지 않고</span> 강의하는 강사는 흔하지 않습니다.</h2>
+      <p>2012년부터 15년 가까이 원장님들 앞에 서 왔습니다. 그렇게 오래 불러주신 데에는, 다 이유가 있습니다.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">5,000<small>명+</small></div><div class="l">누적 수강생 — 원장님만 세어도 최소 5,000명 이상</div></div>
+      <div class="stat"><div class="n">15<small>년</small></div><div class="l">2012년부터 쉬지 않고 이어온 미용계 강의</div></div>
+      <div class="stat"><div class="n">35<small>개</small></div><div class="l">어반트랜드 본점 외 운영 · 관리 중인 가맹점</div></div>
+      <div class="stat"><div class="n">500<small>만+</small></div><div class="l">유튜브 · 인스타그램 누적 조회수</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="story">
+  <div class="wrap story">
+    <div>
+      <div class="sec-head"><span class="eyebrow">왜 이 교육인가</span><h2>직원에게 집중하기보다<br>시스템과 매장에 집중하는 법</h2></div>
+      <div class="body">
+        <p>오너들은 새로운 리더십 경영교육과 혁신적인 관리 방법을 접할 때마다 그게 우리 매장의 새로운 방향이라며 늘 갈아타기 바쁩니다.</p>
+        <p>경험 많고 스스로 일처리가 가능한 직원은 알아서 하도록 지켜보기만 하고, 경험은 부족하지만 열정 넘치는 직원에게는 방향과 제안을 쏟아붓습니다. 그렇게 운영하다 보니 많은 오너들이 공감하는 것 중 하나가 <strong>“키우기만 하면 나간다”</strong>는 것입니다.</p>
+        <p>제가 드리고 싶은 건 직원에게 해주어야 하는 무엇이 아니라, <strong>원장이 이뤄 나가고 직원들이 따르게 만들 수 있는 방법론</strong>입니다. 직원을 위해 희생하기보다, 직원들이 함께 일하고 싶어하는 매장을 만드는 것. 동기부여를 주는 스펙트럼 모델이 우리 매장 자체가 되어야 한다는 이론입니다.</p>
+        <p>불과 10년 전과 지금의 미용 경영 방식은 많이 달라졌습니다. 경영자들의 지식은 늘었고 변화의 속도는 훨씬 빨라졌습니다. 그동안 해왔던 방식은 더 빠르게 쇠퇴할 것입니다.</p>
+        <p>사업의 흥행과 실패, 그리고 절망을 모두 겪었습니다. 그래서 제 이야기를 전하는 사람으로서 부끄럽지 않고 싶었습니다. 미용실 장사를 하는 누군가에게 “나”라는 사람이 도움이 되지 않을까 하여 이 교육을 준비했습니다.</p>
+      </div>
+    </div>
+    <aside class="promise">
+      <span class="eyebrow">약속</span>
+      <h3>겪어보지 않고, 해보지 않고,<br>느껴보지 않은 건 절대 말하지 않습니다.</h3>
+      <p style="color:var(--on-navy-muted)">기대했던 것보다 별로면 교육비는 무조건 100% 환불해 드립니다.</p>
+      <div class="big">10,000%</div>
+      <p style="font-family:var(--display);font-weight:800">자신 있습니다.</p>
+      <ul>
+        <li><span><b>2023년부터</b> 시작한 이 교육을 2026년을 준비하며 새롭게 구성했습니다.</span></li>
+        <li><span>제 교육을 <b>안 들어본 사람은 있어도, 한 번만 들은 사람은 흔치 않습니다.</b></span></li>
+        <li><span>한 번에 많은 인원을 교육하지 않습니다. <b>제가 집중해 줄 수 있는 인원까지만</b> 합니다.</span></li>
+        <li><span>재수강 시 기존 수강 항목은 종류 상관없이 <b>무조건 1만 원</b>입니다.</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">교육 과정</span><h2>필요한 과정을 골라 보세요</h2><p>과정마다 교육 내용·시간·비용·준비물을 확인하신 뒤, 각 과정 하단의 관련 영상을 먼저 보시고 신청 버튼으로 신청하시면 됩니다.</p></div>
+
+    <div class="tabs" role="tablist" aria-label="교육 과정">
+      <a class="tab" role="tab" id="t-management" href="#management" aria-controls="management" data-c="mgmt">현실경영</a>
+      <a class="tab" role="tab" id="t-taxlabor" href="#taxlabor" aria-controls="taxlabor" data-c="taxlab">세무 + 노무</a>
+      <a class="tab" role="tab" id="t-marketing" href="#marketing" aria-controls="marketing" data-c="mkt">마케팅</a>
+      <a class="tab" role="tab" id="t-shortform" href="#shortform" aria-controls="shortform" data-c="sf">숏폼</a>
+      <a class="tab" role="tab" id="t-consulting" href="#consulting" aria-controls="consulting" data-c="cons">1:1 컨설팅</a>
+    </div>
+
+    <!-- 현실경영 -->
+    <div class="panel" role="tabpanel" id="management" aria-labelledby="t-management" data-c="mgmt">
+      <div class="panel-head">
+        <div>
+          <span class="eyebrow">오공원장의 현실 경영 교육</span>
+          <h3>미용실 운영에 필요한<br>진짜 현실 경영 교육</h3>
+          <p class="desc">1인샵 · 소형샵 · 중형샵 · 대형샵 · 공유미용실 · 프랜차이즈. 미용실을 운영하면서 할 수 있는 모든 규모, 모든 가격대를 전부 겪어본 대표가 알려드립니다.</p>
+        </div>
+        <div class="price"><div class="won">40<small>만원</small></div><div class="vat">6시간 · 부가세 별도</div></div>
+      </div>
+      <div class="facts">
+        <div class="fact"><span class="k">교육 시간</span><span class="v">오후 1시 ~ 오후 6시</span></div>
+        <div class="fact"><span class="k">커리큘럼</span><span class="v">4파트 · 총 31강</span></div>
+        <div class="fact"><span class="k">대상</span><span class="v">1인샵부터 30명 넘는 대형매장 원장님까지</span></div>
+      </div>
+      <div class="part-grid">
+        <div class="part"><header><span class="pn">1</span><h4>창업의 본질과 준비</h4><span class="cnt">7강</span></header>
+          <ol><li><span>01</span>망하는 매장들의 공통점</li><li><span>02</span>성공한 매장들의 특징</li><li><span>03</span>미용실을 시작하는 사업의 준비</li><li><span>04</span>창업의 이유, 본질 설정</li><li><span>05</span>최소한의 원장 자격</li><li><span>06</span>미용업이 힘든 이유</li><li><span>07</span>권력의 세 가지</li></ol></div>
+        <div class="part"><header><span class="pn">2</span><h4>조직 관리와 시스템</h4><span class="cnt">11강</span></header>
+          <ol><li><span>08</span>면담의 방법 (접근동기)</li><li><span>09</span>직원의 독립은 배신이다</li><li><span>10</span>착각 파악과 현실 파악</li><li><span>11</span>매장 vs 원장 개인, 두 가지 운영 방식</li><li><span>12</span>규모별(소형·중형·대형·다점포) 매장 문화 괴리감</li><li><span>13</span>순이익 구조 설정</li><li><span>14</span>매장 매출구조 설계방법</li><li><span>15</span>시스템 설계법</li><li><span>16</span>직원관계, MZ스럽게</li><li><span>17</span>지분관계</li><li><span>18</span>동업관계</li></ol></div>
+        <div class="part"><header><span class="pn">3</span><h4>확장 전략과 출구</h4><span class="cnt">7강</span></header>
+          <ol><li><span>19</span>규모확장 (호점 늘리기 or 확장하기)</li><li><span>20</span>Exit 계획 (매장매각)</li><li><span>21</span>폐업 전 마지막 퀘스트</li><li><span>22</span>인턴에서 디자이너가 되기 전 준비물</li><li><span>23</span>상권별 운영전략 (타겟전략)</li><li><span>24</span>신규 매장 창업, 발품 팁</li><li><span>25</span>프랜차이즈 vs 개인 브랜드, 선택과 결정</li></ol></div>
+        <div class="part"><header><span class="pn">4</span><h4>사람과 조직 문화</h4><span class="cnt">6강</span></header>
+          <ol><li><span>26</span>목적성 입사와 장기근속 (빨리 or 오래)</li><li><span>27</span>상호 상표등록</li><li><span>28</span>직원의 마음을 얻는 가장 쉬운 방법</li><li><span>29</span>꼴찌는 필요 없다, 해고해라</li><li><span>30</span>신종 전염병, 근무 태만 바이러스</li><li><span>31</span>DISC, 틀린 게 아닌 다름을 이해하는 방법</li></ol></div>
+      </div>
+      <div class="two">
+        <div class="box"><h4>이런 걸 얻어 가십니다</h4><ul><li>순이익 구조 개선</li><li>직원 면담 및 동기부여 접근법</li><li>1인샵에서 30명이 넘는 대형매장까지의 과정</li><li>원장님 성향에 맞는 현실경영 코칭</li></ul></div>
+        <div class="box note"><h4>교육 전 준비물</h4><ul><li>매장 인원 (디자이너, 인턴, 매니저 등)</li><li>인센티브 및 급여 복지정책 (수익구조 개선)</li><li>최근 3개월간 재료비 지출 현황</li><li>고정지출 (임대료 및 기타 고정비)</li><li>복지 현황 및 앞으로의 계획이나 비전 제시</li></ul></div>
+      </div>
+      <div class="vids-wrap" data-videos="management"></div>
+      <div class="apply"><div><h4>현실경영 교육 신청</h4><p>기수별 최소 6명 충족 시 단톡방 개설 후 일정 조율하여 진행합니다.</p></div><a class="btn" href="https://naver.me/xhlcE1IQ" target="_blank" rel="noopener">네이버 폼으로 신청하기</a></div>
+    </div>
+
+    <!-- 세무 + 노무 -->
+    <div class="panel" role="tabpanel" id="taxlabor" aria-labelledby="t-taxlabor" data-c="taxlab" hidden>
+      <div class="panel-head">
+        <div>
+          <span class="eyebrow">세무 + 노무</span>
+          <h3>모르면 당하고,<br>알면 지키는 세무 · 노무</h3>
+          <p class="desc">실제 노동청 조사와 소송, 세무조사를 직접 겪으며 만든 계약서와 대응법, 합법적인 절세 방법을 그대로 알려드립니다. 계약서·급여계산 롤플레잉과 원장님 매장의 실제 매출·지출 숫자로 직접 계산하며 진행합니다.</p>
+        </div>
+        <div class="price"><div class="won">40<small>만원</small></div><div class="vat">세무+노무 6시간 · 한 가지만 신청 시 25만원 · 부가세 별도</div></div>
+      </div>
+      <div class="facts">
+        <div class="fact"><span class="k">노무 교육 (3시간)</span><span class="v">오후 12시 ~ 오후 3시</span></div>
+        <div class="fact"><span class="k">세무 교육 (3시간)</span><span class="v">오후 3시 ~ 오후 6시</span></div>
+        <div class="fact"><span class="k">한 가지만 신청</span><span class="v">25만원</span></div>
+      </div>
+
+      <div class="sub-head"><h4>노무</h4><span>오후 12시 ~ 3시 · 채용보다 어려운 건 해고, 분쟁은 계약서에서 막습니다</span></div>
+      <div class="box"><h4>현장에서 실제로 있었던 일</h4><p class="sub">원장님 단톡방에 실제로 올라온 이야기들입니다. 미리 알았다면 막을 수 있었던 일들입니다.</p></div>
+      <div class="cases">
+        <figure class="case" style="margin:0"><q>디자이너 3명이서 한 번에 노동청 가서 몇천씩 물고, 바로 옆에 가게 오픈하고 그런 사례들도 있어요.</q><span>경기 · 원장님</span></figure>
+        <figure class="case" style="margin:0"><q>지금 힘든 상황에 퇴직금 월급으로 4백이나 갔는데, 주휴 1년 따지니깐 3백이 넘었어요.</q><span>원장님 단톡방</span></figure>
+        <figure class="case" style="margin:0"><q>계약서 미작성 30~50 나와요.</q><span>서울 · 원장님</span></figure>
+        <figure class="case" style="margin:0"><q>노동청 갔을 때 담당자가 하소연할 정도였어요. 그 직전에 오공원장님 교육 안 들었으면 진짜 큰일 날 뻔했지만 다 수정한 상태로 나가 있었어요.</q><span>원장님 단톡방</span></figure>
+        <figure class="case" style="margin:0"><q>아는 만큼 보인다고, 모르고 지나갔던 것들 때문에 신고당해서 파산할 뻔했네요.</q><span>선바위역 · 원장님</span></figure>
+        <figure class="case" style="margin:0"><q>오공원장님한테 배웠던 건데 수습기간 때는 사람 막 자르는 게 가능하다 해서, 저는 3개월 내에 다 판단하고 아닌 것 같으면 빠르게 자릅니다.</q><span>부천 · 대표님</span></figure>
+      </div>
+
+      <div class="part-grid">
+        <div class="part"><header><span class="pn">1</span><h4>계약 — 분쟁은 여기서 막는다</h4></header>
+          <ul><li>인턴, 디자이너, 매니저 계약서 롤플레잉</li><li>근로자 vs 프리랜서 — 출퇴근 시간, 업무 지시, 복장 규정이 있으면 프리랜서 계약이어도 근로자로 판단될 수 있습니다</li><li>우리 매장에 맞는 계약 방식 고르기 (수습 후 전환, 인센티브 + 지원금 등)</li><li>계약 시 꼭 받아야 할 서류와 개인정보 처리 위탁 계약서</li><li>계약서 내용보다 중요한 것 — 실제 운영과 일치시키기</li></ul></div>
+        <div class="part"><header><span class="pn">2</span><h4>급여 · 4대보험 · 퇴직금</h4></header>
+          <ul><li>정확한 급여계산법 롤플레잉 — 중도 퇴사자 급여를 단순 일할 계산하면 안 되는 이유</li><li>3.3%로 일하던 직원이 4대보험 소급을 요구할 때 대응법</li><li>두루누리 지원금과 권고사직 시 지원 중단 리스크</li><li>퇴직금 정산 — 급여에 나눠 주는 퇴직금이 무효인 이유, 인턴→디자이너 전환 시 정산</li><li>“○년 근무 시 교육비 면제” 약정이 무효인 이유와 안전한 방법</li></ul></div>
+        <div class="part"><header><span class="pn">3</span><h4>해고 · 근태 관리</h4></header>
+          <ul><li>권고사직 방법</li><li>수습기간 안에 판단하고 정리하는 법 — 사유 기록과 문자 통보</li><li>3개월 이상 근무자 해고 시 30일 전 서면 해고예고와 해고예고수당</li><li>휴게시간 기록, 반복 지각 관리, 장기 휴직 처리</li></ul></div>
+        <div class="part"><header><span class="pn">4</span><h4>근로기준법 적용범위와 분쟁 대응</h4></header>
+          <ul><li>상시근로자 5인 이상 기준과 계산법 — 5인 이상이 되면 달라지는 의무 (연장수당, 연차 등)</li><li>노동청 신고 실제사례 및 대응방법 — 출석 요구를 받았을 때 할 일</li><li>대화 녹음 등 분쟁에 대비한 증거 남기기</li><li>직원의 무단 퇴사·고객 유인 시 원장이 먼저 할 수 있는 조치 (내용증명, 소액소송 사례)</li><li>실업급여 부정수급에 절대 협조하면 안 되는 이유</li></ul></div>
+      </div>
+      <div class="sub-head"><h4>세무</h4><span>오후 3시 ~ 6시 · 몰라서 더 내는 세금, 합법적으로 줄이는 법</span></div>
+      <div class="part-grid">
+        <div class="part"><header><span class="pn">1</span><h4>미용실 세무 이해하기</h4></header>
+          <ul><li>부가세 구조와 신고</li><li>종합소득세 누진 구간 — 순이익이 어디까지 오르면 세금이 얼마나 뛰는지 숫자로 확인</li><li>개인사업자에서 법인 전환을 검토해야 하는 시점</li><li>탈세 기준 — 어디서부터 문제가 되는지</li></ul></div>
+        <div class="part"><header><span class="pn">2</span><h4>통장 · 카드 · 정산 관리</h4></header>
+          <ul><li>홈택스 사업용 계좌 등록과 결제수단별 통장 분리</li><li>카드사 · 네이버페이 정산 내역과 실제 입금액 대조 — 미정산 누락 찾기</li><li>사업용으로 등록하면 좋은 카드와 세무사 200% 활용법</li></ul></div>
+        <div class="part"><header><span class="pn">3</span><h4>합법적 절세</h4></header>
+          <ul><li>종소세 줄이기 — 통합고용세액공제, 지난 신고분 경정청구</li><li>봉사료 셋팅 실습 — 적용 요건, 안내 문구, 확인서와 지급대장 작성</li><li>휴대폰·인터넷·정수기 등 공과금 사업자 명의 전환</li><li>공짜로 차 사기 — 9인승 이상 · 경차 · 화물차와 일반 승용차의 세금 차이</li></ul></div>
+        <div class="part"><header><span class="pn">4</span><h4>세무조사 리스크 막기</h4></header>
+          <ul><li>세무조사는 어떻게 시작되는지 — 탈세 제보 구조와 내부 리스크</li><li>현금·계좌이체 대신 카드 중심으로 바꾸는 매장 운영</li><li>실제 세무조사를 받아본 강사의 경험담</li></ul></div>
+      </div>
+      <div class="two">
+        <div class="box note"><h4>노무 교육 전 준비물</h4><ul><li>우리 매장 직원 계약서 가져오기</li></ul></div>
+        <div class="box note"><h4>세무 교육 전 준비물</h4><ul><li>실제 최근 3개월 지출 적어오기 (임대료, 고정비, 인건비 등)</li><li>올해 1월부터 전월까지의 실제 매출 (현금, 카드, 그 외 등등) 정확하게 준비해오기 — 정리도 도와드립니다</li></ul></div>
+      </div>
+      <div class="vids-wrap" data-videos="taxlabor"></div>
+      <div class="apply"><div><h4>세무 · 노무 교육 신청</h4><p>세무+노무 40만원 / 한 가지만 신청 시 25만원. 기수별 최소 6명 충족 시 진행합니다.</p></div><a class="btn" href="https://naver.me/xhlcE1IQ" target="_blank" rel="noopener">네이버 폼으로 신청하기</a></div>
+    </div>
+
+    <!-- 숏폼 -->
+    <div class="panel" role="tabpanel" id="shortform" aria-labelledby="t-shortform" data-c="sf" hidden>
+      <div class="panel-head">
+        <div>
+          <span class="eyebrow">숏폼 콘텐츠 교육 · 단 1회</span>
+          <h3>단 하루 만에, 누구나<br>따라 할 수 있는 숏폼</h3>
+          <p class="desc">숏폼 콘텐츠의 기획, 촬영, 편집까지 모든 것을 단 하루에 한 번에 배웁니다. 카메라 앞이 어색해도, 편집을 해본 적이 없어도 괜찮습니다.</p>
+        </div>
+        <div class="price"><div class="won">50<small>만원</small></div><div class="vat">1인 · 7시간 · 부가세 별도</div></div>
+      </div>
+      <div class="facts">
+        <div class="fact"><span class="k">교육 횟수</span><span class="v">단 1회</span></div>
+        <div class="fact"><span class="k">교육 시간</span><span class="v">숏폼만 집중 7시간</span></div>
+        <div class="fact"><span class="k">수강 후</span><span class="v">한 번 수강하면 교육생 피드백 계속 제공</span></div>
+      </div>
+      <div class="two">
+        <div class="box"><h4>하루에 배우는 것</h4><ul><li><b>기획</b> — 무엇을 찍을지, 우리 매장에 맞는 콘텐츠 주제 정하기</li><li><b>촬영</b> — 카메라 앞에서 말하기, 화면 비율과 구도</li><li><b>편집</b> — 엄두가 안 나던 편집을 처음부터 끝까지 직접</li></ul></div>
+        <div class="box note"><h4>늦은 나이에 시작해도 늦지 않습니다</h4><p>숏폼은 젊은 사람만의 것이 아닙니다. 아래는 숏폼 교육을 받은 뒤 실제로 성장한 매장의 데이터입니다. 시작하는 시점보다 중요한 건, 배운 대로 꾸준히 하는 것입니다.</p></div>
+      </div>
+
+      <div class="result">
+        <div class="sec-head" style="margin-bottom:0"><span class="eyebrow">실제 교육생 매장 데이터</span><h3 style="font-size:clamp(22px,3.4vw,28px);font-weight:900">10월 27일 교육 후, 단 5개월 만에</h3></div>
+        <div class="result-head">
+          <div class="kpi"><span class="k">실 접객수</span><span class="v">+402<small>명</small></span><span class="d">624명 → <b>1,026명</b></span></div>
+          <div class="kpi"><span class="k">월 매출</span><span class="v">2.5<small>배</small></span><span class="d">28,793,600원 → <b>73,686,200원</b></span></div>
+          <div class="kpi"><span class="k">원장님 평균 객단가</span><span class="v">2.1<small>배</small></span><span class="d">53,857원 → <b>114,713원</b></span></div>
+        </div>
+        <figure class="shot"><a href="img/sf-data2.jpg" data-lb><img src="img/sf-data2.jpg" alt="숏폼 교육 후 5개월간 고객수와 매출 변화 데이터" loading="lazy"></a><figcaption>2025년 10월 → 2026년 3월, 고객수와 매출 현황 (누르면 크게 볼 수 있습니다)</figcaption></figure>
+        <figure class="shot"><a href="img/sf-data1.jpg" data-lb><img src="img/sf-data1.jpg" alt="컨셉으로 꾸준하게 상승한 고객수와 객단가 데이터" loading="lazy"></a><figcaption>컨셉으로 꾸준하게 상승한 고객수 × 객단가 = 매출상승 (원장님 기준)</figcaption></figure>
+      </div>
+      <div class="vids-wrap" data-videos="shortform"></div>
+      <div class="apply"><div><h4>숏폼 콘텐츠 교육 신청</h4><p>1인 50만원 · 단 1회 7시간. 기수별 최소 6명 충족 시 단톡방 개설 후 일정 조율하여 진행합니다.</p></div><a class="btn" href="https://naver.me/xhlcE1IQ" target="_blank" rel="noopener">네이버 폼으로 신청하기</a></div>
+    </div>
+
+    <!-- 마케팅 -->
+    <div class="panel" role="tabpanel" id="marketing" aria-labelledby="t-marketing" data-c="mkt" hidden>
+      <div class="panel-head">
+        <div>
+          <span class="eyebrow">원데이 마케팅</span>
+          <h3>미용만 했지,<br>마케팅이 뭐지? 하는 원장님께</h3>
+          <p class="desc">마케팅 잘하는 인플루언서는 많지만, 저마다 분야가 달라 내 매장에 맞지 않는 단추를 억지로 끼우는 경우가 많습니다. 네이버부터 인스타그램, 유튜브까지 여러 채널로 실제 고객 유입을 만들어 온 방법을 그대로 알려드립니다. 어반트랜드 본점은 10년이 넘도록 신규고객 평균 400~500명이 꾸준히 유입되고 있습니다.</p>
+        </div>
+        <div class="price"><div class="won">50<small>만원</small></div><div class="vat">부가세 별도</div></div>
+      </div>
+      <div class="sched box">
+        <h4>교육 시간 (8시간)</h4>
+        <div><b>1부</b><span>오전 10시 ~ 오후 1시 (3시간)</span></div>
+        <div><b>2부</b><span>오후 2시 ~ 오후 4시 (2시간)</span></div>
+        <div><b>3부</b><span>오후 4시 30분 ~ 오후 7시 (2시간)</span></div>
+      </div>
+      <div class="two">
+        <div class="box"><h4>약속드립니다</h4><p>상세 교육 내용은 단톡방 개설 후 안내드립니다.</p><p style="font-family:var(--display);font-size:20px;font-weight:800;color:var(--red);line-height:1.45">최소 지금보다 신규고객 유입률<br>200명 이상 만들어 드리겠습니다.</p><p>하란 대로만 잘 따라오시면 됩니다.</p></div>
+        <div class="box note"><h4>교육 전 준비물</h4><ul><li>노트북 / 모델사진 / 편집된 영상</li><li>네이버페이센터, 네이버톡톡파트너센터, 예약파트너센터 가입</li><li>네이버 아이디 2개 이상 준비 (실명인증된 아이디)</li><li>구글 애드센스 광고관리자 가입하기</li></ul></div>
+      </div>
+      <div class="vids-wrap" data-videos="marketing"></div>
+      <div class="apply"><div><h4>원데이 마케팅 교육 신청</h4><p>기수별 최소 6명 충족 시 단톡방 개설 후 일정 조율하여 진행합니다.</p></div><a class="btn" href="https://naver.me/xhlcE1IQ" target="_blank" rel="noopener">네이버 폼으로 신청하기</a></div>
+    </div>
+
+    <!-- 컨설팅 -->
+    <div class="panel" role="tabpanel" id="consulting" aria-labelledby="t-consulting" data-c="cons" hidden>
+      <div class="panel-head">
+        <div>
+          <span class="eyebrow">1:1 컨설팅</span>
+          <h3>우리 매장만의 문제를<br>1:1로 짚어드립니다</h3>
+          <p class="desc">단체 교육으로 다루기 어려운 우리 매장만의 상황을 오공원장과 1:1로 상담합니다. 분당 서현역 어반트랜드에서 대면으로 만나거나, 원장님 매장으로 직접 찾아가는 출장 상담 중에서 고르실 수 있습니다.</p>
+        </div>
+        <div class="price"><div class="won">30<small>만원</small></div><div class="vat">대면 상담 1시간 · 부가세 별도</div></div>
+      </div>
+      <div class="two">
+        <div class="box"><h4>대면 상담</h4><p style="font-family:var(--num);font-size:28px;font-weight:700;line-height:1.2">300,000<small style="font-family:var(--display);font-size:14px;margin-left:4px">원 / 1시간</small></p><ul><li>장소: 분당 서현역 어반트랜드</li><li>예시: 2시간 상담 60만원</li></ul></div>
+        <div class="box"><h4>출장 상담</h4><p style="font-family:var(--num);font-size:28px;font-weight:700;line-height:1.2">500,000<small style="font-family:var(--display);font-size:14px;margin-left:4px">원 / 1시간</small></p><ul><li>원장님 매장으로 직접 방문해 현장을 보고 상담</li></ul></div>
+      </div>
+      <div class="apply"><div><h4>1:1 컨설팅 신청</h4><p>신청서에 대면 / 출장 중 원하시는 방식을 남겨주시면 일정을 조율해 연락드립니다.</p></div><a class="btn" href="https://naver.me/xhlcE1IQ" target="_blank" rel="noopener">네이버 폼으로 신청하기</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="instructor">
+  <div class="wrap inst">
+    <div class="inst-card">
+      <img src="img/profile.jpg" alt="오공원장">
+      <div>
+        <div class="name">오공원장</div>
+        <p class="roles">현) 어반트랜드 대표 / (주)어반트랜드팀 대표 / (주)브릭연구소 대표 / 일리아·나인바이오 공동대표 / 어반브릭스 공간대여 / 어반사진관 운영 / 마케팅대행사 운영 / 노무·세무·마케팅·팀웍·고객관리 교육강사</p>
+      </div>
+      <div class="social">
+        <a href="https://www.youtube.com/@미용실연구소" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0000"/><path d="M10 9l5 3-5 3z" fill="#fff"/></svg>유튜브 미용실연구소</a>
+        <a href="https://www.instagram.com/urbantrend_ohkong/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>인스타 오공원장</a>
+      </div>
+    </div>
+    <div>
+      <div class="sec-head"><span class="eyebrow">강사 소개</span><h2>1인샵부터 120평대 본점, 가맹점 35개까지<br>전부 직접 겪었습니다</h2><p>유튜브 ‘미용실연구소’와 인스타그램 ‘오공원장’에서 2007년부터 연구하고 적용해 온 미용실 시스템을 원장님과 예비 오너분들께 공유하고 있습니다. 유튜브·인스타그램 누적 조회수 500만 회 이상.</p></div>
+      <ol class="timeline">
+        <li><div class="y">2006</div><div class="t">미용 입문</div></li>
+        <li><div class="y">2007</div><div class="t">네이버 블로그 및 카페 활동</div></li>
+        <li><div class="y">2009</div><div class="t">샵인샵 (현 공유미용실) 입점</div></li>
+        <li><div class="y">2011~2013</div><div class="t">1인샵 운영 (상호: 오공헤어스타일)</div></li>
+        <li class="hl"><div class="y">2012</div><div class="t">미용계 강의 시작 — 지금까지 15년 가까이 쉬지 않고 강의</div></li>
+        <li><div class="y">2014 ~ 2016</div><div class="t">어반트랜드 첫 확장과 폐업</div>
+          <ul class="tl-sub">
+            <li><b>2014</b> 23평 어반트랜드 서현점 창업</li>
+            <li><b>2014. 9</b> 60평 어반트랜드 미금점 오픈</li>
+            <li><b>2015. 4</b> 30평 어반트랜드 야탑점 오픈</li>
+            <li><b>2015. 6</b> 어반트랜드 아카데미 오픈</li>
+            <li><b>2016. 12. 31</b> 전 매장 · 아카데미 폐업</li>
+          </ul></li>
+        <li><div class="y">2017. 1. 15</div><div class="t">서현점 단일 매장으로 50평 재오픈</div></li>
+        <li class="hl"><div class="y">2020</div><div class="t">프랜차이즈 시작 — 현재 본점 외 35개 가맹점 운영 · 관리 중</div></li>
+        <li><div class="y">2021</div><div class="t">미용재료 제조 및 유통</div></li>
+        <li><div class="y">2022</div><div class="t">본점 120평대 확장 이전 및 헤어샵 & 사진관 운영 중</div></li>
+        <li class="hl"><div class="y">2025</div><div class="t">네이버 예약 10주년 행사 — 네이버플레이스 미용실 누적예약률 · 리뷰율 · 매출 전국 1위 인터뷰</div></li>
+        <li class="hl"><div class="y">2026. 6</div><div class="t">프렌즈샵 가맹점 시작 — 2026년 11월 기준 15개 매장</div></li>
+      </ol>
+      <figure class="media" style="margin-inline:0">
+        <img src="img/interview.jpg" alt="네이버 예약 10주년 인터뷰 화면">
+        <figcaption><b>사장님과 함께한 10년, 네이버 예약</b>네이버 예약 10주년 기념 인터뷰에 어반트랜드 사장님으로 출연했습니다. (사진=네이버)</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">어쩌다원장 오공원장 교육후기</span><h2>너무 많지만, 조금만 가져왔습니다</h2><p>수강하신 원장님들이 단톡방에 직접 남겨주신 후기입니다. 마우스를 올리면 잠시 멈춥니다.</p></div>
+    <div class="rv-src" id="rv-src">
+      <figure class="rv"><q>대표님의 현실 경영 교육 듣고 완전 만족했습니다!! 그동안 직접 매장 운영하며 고민이 많았었는데 대표님의 노하우를 듣고 고민이 풀렸습니다!!</q><footer><span>신림 · 맨스콧헤어</span><span class="tg">경영</span></footer></figure>
+      <figure class="rv"><q>한국에서 미용실 하는 사업자라면 필수 교육이란 생각든 교육이었습니다. 8시 넘어서까지 질문도 성의껏 다 알려주시고, 교육비 몇 배의 정보를 알고 와서 좋았습니다.</q><footer><span>교대역 · 정착헤어 히로원장</span><span class="tg">세무·노무</span></footer></figure>
+      <figure class="rv"><q>해봤던 것 중에 가장 도움 되었던 건 오공원장님 마케팅 교육 받고 마케팅의 이해도 높여서, 네이버페이 결제 유도하고 리뷰 쓰고 답글 달고 해서 플레이스 노출을 올라가게 하는 게 제일 확실하고 좋았던 것 같아요.</q><footer><span>목동 · 리얼드살롱 김은아원장</span><span class="tg">마케팅</span></footer></figure>
+      <figure class="rv"><q>단순한 이론이 아니라 현장에서 바로 적용할 수 있는 내용이라 더욱 값지게 느껴졌습니다. ‘아는 만큼 힘이 된다’는 말을 다시 한번 실감한 하루였습니다.</q><footer><span>어반트랜드 노원역점</span><span class="tg">경영</span></footer></figure>
+      <figure class="rv"><q>세무 노무는 정말 대표님 교육을 듣기 전과 듣고 난 후로 나뉠 거 같아요. 지금이라도 알아서 천만다행이에요.</q><footer><span>경남 · 비바엠 원장</span><span class="tg">세무·노무</span></footer></figure>
+      <figure class="rv"><q>플레이스 페이지에서 한 번도 올라온 적이 없었는데 교육 덕분입니다. 저희 매장이 오공원장님 매장 바로 뒤까지 올라왔어요.</q><footer><span>세노마 수강 원장님</span><span class="tg">마케팅</span></footer></figure>
+      <figure class="rv"><q>허공에 뜬 이상적인 교육보다 현실적이고 실제로 반영할 수 있는 내용들로 꽉꽉 채워주셔서 너무 좋았습니다! 다음 주 노무 세무 때 또 한번 뵙겠습니다!!</q><footer><span>포항 효자동 · 가온길헤어 영빈원장</span><span class="tg">경영</span></footer></figure>
+      <figure class="rv"><q>아는 만큼 보인다고, 모르고 지나갔던 것들 때문에 신고당해서 파산할 뻔했네요. 돈 써서 교육 들은 것이 아니라 돈 번 거 같아요.</q><footer><span>선바위역 · 헤어세렌디피티 고은원장</span><span class="tg">노무</span></footer></figure>
+      <figure class="rv"><q>그때 오공원장님 교육 아니었으면 디자이너 구인하는 것도 그렇고 아무것도 모르고 대비도 못할 뻔했는데, 교육 듣고 그 디자이너분과 이제 3년째 같이 함께 근무하고 있어요.</q><footer><span>분당 서현동 · 고트 혜민</span><span class="tg">경영</span></footer></figure>
+      <figure class="rv"><q>정말 간지러운 곳 확 긁어주는 교육입니다. 너무너무 추천드려요. 교육비 훨씬 그 이상의 가치예요.</q><footer><span>화원역 · 블레싱헤어 소망원장</span><span class="tg">세무·노무</span></footer></figure>
+      <figure class="rv"><q>어떤 교육을 들어도 이렇게 상세하게 디테일하게 도움받은 적은 없었는데, 이번 세무노무 교육 듣고 벌써 몇억은 절세된 느낌입니다!!!</q><footer><span>판교역 · 여기지금 원장</span><span class="tg">세무·노무</span></footer></figure>
+      <figure class="rv"><q>미용 19년 차, 매장 운영 11년 차이고 매장 3개 돌리고 자리 잡았지만 더 발전하고 싶어서 마케팅 교육 듣고 있습니다. 다 미용 오래했다고 생각했는데도 배울 것 너무 많고 반성도 많이 했습니다.</q><footer><span>경기 안산 · 범원장</span><span class="tg">마케팅</span></footer></figure>
+      <figure class="rv"><q>6시간 예상 교육시간을 넘어 8시간 동안 열정을 쏟아부어 주신 내용들은 모두 많은 경험들을 바탕으로 말씀해 주시니 더 쏙쏙 들어오더라구요. 원래 계획 없었던 노무세무 교육까지 바로 신청했습니다.</q><footer><span>인천 송도 · 아인크헤어</span><span class="tg">경영</span></footer></figure>
+      <figure class="rv"><q>마케팅 교육 신청했는데 1회차만으로도 힘이 뿜뿜 납니다. 어쩜 이런 걸 알았을까 싶은 꿀팁이 너무 많아요!!! 얼마나 많이 고민하고 연구하셨을지가 느껴집니다.</q><footer><span>산본역 · 찬란한헤어 부원장</span><span class="tg">마케팅</span></footer></figure>
+      <figure class="rv"><q>장장 8시간 동안 알차고 귀한 꿀팁 정보들 아낌없이 주고 싶어 하시는 그 마인드도 존경스럽네요. 한 번 더 듣고 싶은 현실강의 감사합니다!!</q><footer><span>인천 송도 · 로커스헤어 김정원</span><span class="tg">경영</span></footer></figure>
+      <figure class="rv"><q>오늘 오전 11시부터 6시까지 노무세무 교육을 듣고 왔는데, 평소 알고 있다고 생각했던 분야였는데도 새롭게 추가되는 법안과 사례들로 인해 너무 도움이 많이 되었습니다.</q><footer><span>세노마 수강 원장님</span><span class="tg">세무·노무</span></footer></figure>
+    </div>
+    <div class="rv-stage" id="rv-stage" aria-label="교육 후기 목록">
+      <div class="rv-col"><div class="rv-track"></div></div>
+      <div class="rv-col"><div class="rv-track"></div></div>
+      <div class="rv-col"><div class="rv-track"></div></div>
+    </div>
+    <div class="caps">
+      <a href="img/review1.jpg" data-lb><img src="img/review1.jpg" alt="교육 후기 단톡방 캡처 1" loading="lazy"></a>
+      <a href="img/review2.jpg" data-lb><img src="img/review2.jpg" alt="교육 후기 단톡방 캡처 2" loading="lazy"></a>
+      <a href="img/review4.jpg" data-lb><img src="img/review4.jpg" alt="교육 후기 단톡방 캡처 3" loading="lazy"></a>
+      <a href="img/review3.jpg" data-lb><img src="img/review3.jpg" alt="마케팅 교육 후 플레이스 순위 상승 캡처" loading="lazy"></a>
+    </div>
+    <p class="caps-note">실제 단톡방 후기 캡처 — 누르면 크게 볼 수 있습니다.</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">교육 현장</span><h2>교육 수강생분들과 함께</h2></div>
+    <div class="gallery">
+      <img src="img/class1.jpg" alt="교육 현장 사진 모음 1" loading="lazy">
+      <img src="img/class2.jpg" alt="교육 현장 사진 모음 2" loading="lazy">
+      <img src="img/class3.jpg" alt="교육 현장 사진 모음 3" loading="lazy">
+      <img src="img/class4.jpg" alt="교육 현장 사진 모음 4" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">공통 안내</span><h2>신청 전 확인해 주세요</h2></div>
+    <div class="info">
+      <div class="box"><h4>교육 일정</h4><p>기수별 최소 인원 6명 이상 충족 시 진행합니다. 인원이 모이면 단톡방을 개설한 뒤 일정을 조율해 진행합니다.</p></div>
+      <div class="box"><h4>장소</h4><p>분당 서현역 (어반트랜드 본점) 옆 <b>스타랩아카데미</b><br><span style="color:var(--muted)">네이버에서 ‘스타랩 공간대여’로 검색하시면 됩니다. 1:1 대면 컨설팅은 분당 서현역 어반트랜드에서 진행합니다.</span></p></div>
+      <div class="box"><h4>비용 안내</h4><p>모든 교육비는 부가세 별도이며, 전자세금계산서 또는 현금영수증을 발행해 드립니다.</p></div>
+      <div class="box"><h4>재수강 · 환불</h4><p>재수강 시 기존 수강 항목은 종류 상관없이 무조건 1만 원입니다. 기대했던 것보다 별로면 교육비는 100% 환불해 드립니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>어쩌다 원장이 되셨어도,<br>이제는 제대로 하실 차례입니다</h2>
+    <p>한 번에 많은 인원을 받지 않습니다. 원하는 과정을 확인하시고 신청서를 남겨주세요.</p>
+    <a class="btn" href="https://naver.me/xhlcE1IQ" target="_blank" rel="noopener">교육 신청서 작성하기</a>
+    <nav class="chips" aria-label="교육 과정 다시 보기">
+        <a class="chip" href="#management" data-c="mgmt">현실경영</a>
+        <a class="chip" href="#taxlabor" data-c="taxlab">세무 + 노무</a>
+        <a class="chip" href="#marketing" data-c="mkt">마케팅</a>
+        <a class="chip" href="#shortform" data-c="sf">숏폼</a>
+        <a class="chip" href="#consulting" data-c="cons">1:1 컨설팅</a>
+    </nav>
+  </div>
+</section>
+<footer class="foot">미용실연구소 · 어반트랜드 오공원장</footer>
+
+<div class="lb" id="lb" hidden><button type="button" id="lb-close">닫기</button><img id="lb-img" alt=""></div>
+
+<script>
+(function(){
+  /* 과정별 관련 영상 — 유튜브 미용실연구소 */
+  var VIDEOS={
+    management:[
+      ['J0lco9y6iOM','직원이 안구해지는 진짜 이유'],
+      ['MgduvbOqSuM','매출 1등 찍고 원장이 됐는데, 직원들이 떠나는 이유'],
+      ['WMpZwde7ris','원장 별 미용실 매출 차이'],
+      ['ZUQD9JgZWsQ','원장님, 본인의 장점이 뭔지 정확하게 알고 계세요?'],
+      ['LOmlsp3JTb8','미용실순이익관리 미용실가계부 무료배포'],
+      ['5reRyyM9lbA','연매출 100억 대표가 신념을 지킨 방법']
+    ],
+    taxlabor:[
+      ['Wwi_jky0IqY','진짜 꼭 들으셔야 합니다. (노무, 세무) 얕게 알고 큰코 다칩니다'],
+      ['5Pxa_vlvbX0','세무사, 노무사와 미용실원장의 배틀토크쇼 합법과 실전 이야기'],
+      ['AOLH0zvaqJA','수습기간내 해고의 정당성과 합리적인 사유??'],
+      ['r7r_dTwUUe4','상시근로자 5인이상 기준 제대로 알고 운영하세요.'],
+      ['ivAZKt7W8ic','1년 안채우면 퇴직금 안줘도 되나요?'],
+      ['fMaQA4xrbFI','3.3% 하다가 4대보험 가입적용 요청할때'],
+      ['t5TGObDGWfQ','노동청 출석 명령 받으면 이것부터 체크하세요'],
+      ['hDNxMK6yIW4','퇴사한 직원이 근처에 매장을 오픈,이직을 했다? 제한이 가능한가'],
+      ['21X_Qz6kW14','미용실에 차가 왜 필요해요? 세무조사관 질문'],
+      ['FUFueTduw-k','미용실 봉사료 하지마세요 (관리가 핵심)'],
+      ['B5WSWQSnRIw','개인사업자가 법인전환이 필요한 시점'],
+      ['WsUTabBCbsI','수습기간 연장의 최대와, 해고할때 주의사항']
+    ],
+    shortform:[
+      ['yRGbjesMuog','영상교육 3편) 숏폼 편집할 엄두가 안나요 ㅠㅠ'],
+      ['4lDHbfurjIM','컨텐츠 주제 정하는거 어렵죠? 유투브,인스타 뭘 찍지?'],
+      ['zQM1u6uK9Sg','카메라 앞에서 얼음? 말하는게 어렵다면 이렇게 해보세요'],
+      ['VUaf071CEbI','미용사가 만드는 컨텐츠 화면비율 이렇게 하세요'],
+      ['f77GnbAnCdQ','헤어디자이너 추천 컨텐츠 5가지 (영상교육4편)'],
+      ['A_JTkoOJRQE','유투브랑 인스타? 롱폼이냐 숏폼이냐 고민인가요']
+    ],
+    marketing:[
+      ['5d_bBfXJRjo','신규손님 많아지는 플레이스 셋팅 1편'],
+      ['pzkuvl3YZwQ','마케팅 2편 (신규손님 많아지는 플레이스셋팅)'],
+      ['F9L8pnMX--A','4편) 플레이스 신규유입 관리 6가지'],
+      ['Q7TroQukURg','5편) 신규손님 많아지는 리뷰답글 어떻게 해야하는지'],
+      ['MQB_sCmBOFA','네이버플레이스광고 대신 인스타광고 꼭 해보세요'],
+      ['k2aN64iPVLQ','신규고객 늘리는 인스타그램 활용 1편 (계정셋팅편)']
+    ]
+  };
+  var yt='<svg viewBox="0 0 26 18" aria-hidden="true"><rect width="26" height="18" rx="5" fill="#ff0000"/><path d="M10.5 5l6 4-6 4z" fill="#fff"/></svg>';
+  var play='<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5l11 6.5-11 6.5z" fill="#fff"/></svg>';
+  document.querySelectorAll('[data-videos]').forEach(function(box){
+    var list=VIDEOS[box.getAttribute('data-videos')]||[];
+    var html='<h4>'+yt+'관련 영상 먼저 보기</h4><div class="vids">';
+    list.forEach(function(v){
+      html+='<a class="vid" href="https://www.youtube.com/watch?v='+v[0]+'" target="_blank" rel="noopener"><span class="play">'+play+'</span><span class="tt">'+v[1]+'<small>유튜브 미용실연구소에서 보기</small></span></a>';
+    });
+    box.innerHTML=html+'</div>';
+  });
+
+  /* 탭 */
+  var ids=['management','taxlabor','marketing','shortform','consulting'];
+  var alias={tax:'taxlabor',labor:'taxlabor'};
+  function show(id,scroll){
+    id=alias[id]||id;
+    if(ids.indexOf(id)<0) return false;
+    ids.forEach(function(x){
+      document.getElementById(x).hidden = x!==id;
+      document.getElementById('t-'+x).setAttribute('aria-selected', x===id?'true':'false');
+    });
+    if(scroll) document.getElementById('courses').scrollIntoView({behavior:'smooth'});
+    return true;
+  }
+  ids.forEach(function(x){
+    document.getElementById('t-'+x).addEventListener('click',function(e){
+      e.preventDefault(); show(x,false);
+      try{history.replaceState(null,'','#'+x)}catch(_){}
+    });
+  });
+  /* 첫 화면·마지막 과정 버튼 */
+  document.querySelectorAll('.chip').forEach(function(c){
+    c.addEventListener('click',function(e){
+      var id=c.getAttribute('href').slice(1);
+      if(ids.indexOf(id)<0) return;
+      e.preventDefault(); show(id,true);
+      try{history.replaceState(null,'','#'+id)}catch(_){}
+    });
+  });
+  window.addEventListener('hashchange',function(){ show(location.hash.slice(1),true); });
+  var h=location.hash.slice(1); if(!show(h,!!h)) show('management',false);
+
+  /* 후기 — 위로 계속 올라오는 3단 */
+  var src=Array.prototype.slice.call(document.querySelectorAll('#rv-src .rv'));
+  var tracks=document.querySelectorAll('#rv-stage .rv-track');
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cols=[[],[],[]];
+  src.forEach(function(el,i){cols[i%3].push(el)});
+  cols.forEach(function(items,ci){
+    var t=tracks[ci];
+    items.forEach(function(el){t.appendChild(el.cloneNode(true))});
+    if(!reduce){ items.forEach(function(el){var c=el.cloneNode(true);c.setAttribute('aria-hidden','true');t.appendChild(c)}); }
+  });
+  /* 좁은 화면에서는 숨겨진 열의 후기를 보이는 열로 합치기 */
+  function rebalance(){
+    var w=window.innerWidth, n=w<=540?1:(w<=860?2:3);
+    var all=src;
+    var buckets=[];for(var i=0;i<n;i++)buckets.push([]);
+    all.forEach(function(el,i){buckets[i%n].push(el)});
+    for(var c=0;c<3;c++){
+      var t=tracks[c]; t.innerHTML='';
+      if(c>=n) continue;
+      buckets[c].forEach(function(el){t.appendChild(el.cloneNode(true))});
+      if(!reduce) buckets[c].forEach(function(el){var k=el.cloneNode(true);k.setAttribute('aria-hidden','true');t.appendChild(k)});
+      t.style.setProperty('--dur',(buckets[c].length*(n===1?6:7)+ c*5)+'s');
+    }
+  }
+  var last=-1;
+  function onResize(){var w=window.innerWidth,n=w<=540?1:(w<=860?2:3);if(n!==last){last=n;rebalance()}}
+  onResize(); window.addEventListener('resize',onResize);
+
+  /* 이미지 크게 보기 */
+  var lb=document.getElementById('lb'), img=document.getElementById('lb-img');
+  document.querySelectorAll('[data-lb]').forEach(function(a){
+    a.addEventListener('click',function(e){e.preventDefault();img.src=a.getAttribute('href');img.alt=a.querySelector('img').alt;lb.hidden=false;});
+  });
+  function close(){lb.hidden=true;img.src='';}
+  document.getElementById('lb-close').addEventListener('click',close);
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)close();});
+})();
+</script>
+
+</body>
+</html>

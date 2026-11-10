@@ -236,12 +236,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .rv-stage{position:relative;height:640px;overflow:hidden;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
   -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 12%,#000 88%,transparent 100%);
           mask-image:linear-gradient(to bottom,transparent 0,#000 12%,#000 88%,transparent 100%)}
-.rv-col{min-width:0;overflow:hidden}
-.rv-track{display:grid;gap:16px;animation:rv-up var(--dur,60s) linear infinite}
-.rv-col:nth-child(2) .rv-track{--dur:74s}
-.rv-col:nth-child(3) .rv-track{--dur:66s}
-.rv-stage:hover .rv-track{animation-play-state:paused}
-@keyframes rv-up{from{transform:translateY(0)}to{transform:translateY(calc(-50% - 8px))}}
+.rv-col{min-width:0;overflow-y:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;touch-action:pan-y;cursor:grab}
+.rv-col::-webkit-scrollbar{display:none}
+.rv-track{display:grid;gap:16px;padding-block:40px}
+.rv-hint{margin-top:12px;font-size:13px;color:var(--on-navy-muted);text-align:center}
 .rv{margin:0;background:var(--navy-2);border-radius:16px;padding:22px;display:grid;gap:12px}
 .rv q{quotes:none;font-size:15px;line-height:1.75}
 .rv footer{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:13px;color:var(--on-navy-muted)}
@@ -337,7 +335,6 @@ footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:cent
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important}
-  .rv-track{animation:none}
   .rv-stage{height:auto;-webkit-mask-image:none;mask-image:none}
 }
 </style>
@@ -648,7 +645,7 @@ footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:cent
 
 <section id="reviews">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">어쩌다원장 오공원장 교육후기</span><h2>너무 많지만, 조금만 가져왔습니다</h2><p>수강하신 원장님들이 단톡방에 직접 남겨주신 후기입니다. 마우스를 올리면 잠시 멈춥니다.</p></div>
+    <div class="sec-head"><span class="eyebrow">어쩌다원장 오공원장 교육후기</span><h2>너무 많지만, 조금만 가져왔습니다</h2><p>수강하신 원장님들이 단톡방에 직접 남겨주신 후기입니다.</p></div>
     <div class="rv-src" id="rv-src">
       <figure class="rv"><q>대표님의 현실 경영 교육 듣고 완전 만족했습니다!! 그동안 직접 매장 운영하며 고민이 많았었는데 대표님의 노하우를 듣고 고민이 풀렸습니다!!</q><footer><span>신림 · 맨스콧헤어</span><span class="tg">경영</span></footer></figure>
       <figure class="rv"><q>한국에서 미용실 하는 사업자라면 필수 교육이란 생각든 교육이었습니다. 8시 넘어서까지 질문도 성의껏 다 알려주시고, 교육비 몇 배의 정보를 알고 와서 좋았습니다.</q><footer><span>교대역 · 정착헤어 히로원장</span><span class="tg">세무·노무</span></footer></figure>
@@ -672,6 +669,7 @@ footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:cent
       <div class="rv-col"><div class="rv-track"></div></div>
       <div class="rv-col"><div class="rv-track"></div></div>
     </div>
+    <p class="rv-hint">후기는 자동으로 올라가요. 손가락이나 마우스 휠로 직접 넘겨볼 수도 있습니다.</p>
     <div class="caps">
       <a href="img/review1.jpg" data-lb><img src="img/review1.jpg" alt="교육 후기 단톡방 캡처 1" loading="lazy"></a>
       <a href="img/review2.jpg" data-lb><img src="img/review2.jpg" alt="교육 후기 단톡방 캡처 2" loading="lazy"></a>
@@ -806,34 +804,59 @@ footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:cent
   window.addEventListener('hashchange',function(){ show(location.hash.slice(1),true); });
   var h=location.hash.slice(1); if(!show(h,!!h)) show('management',false);
 
-  /* 후기 — 위로 계속 올라오는 3단 */
+  /* 후기 — 위로 계속 올라오는 3단 (자동으로 올라가고, 손으로도 스크롤 가능) */
   var src=Array.prototype.slice.call(document.querySelectorAll('#rv-src .rv'));
-  var tracks=document.querySelectorAll('#rv-stage .rv-track');
+  var colEls=Array.prototype.slice.call(document.querySelectorAll('#rv-stage .rv-col'));
   var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var cols=[[],[],[]];
-  src.forEach(function(el,i){cols[i%3].push(el)});
-  cols.forEach(function(items,ci){
-    var t=tracks[ci];
-    items.forEach(function(el){t.appendChild(el.cloneNode(true))});
-    if(!reduce){ items.forEach(function(el){var c=el.cloneNode(true);c.setAttribute('aria-hidden','true');t.appendChild(c)}); }
-  });
-  /* 좁은 화면에서는 숨겨진 열의 후기를 보이는 열로 합치기 */
+  var state=colEls.map(function(){return {pos:0,hold:0,speed:30}});
+  var RESUME=1500; /* 손을 뗀 뒤 다시 올라가기까지(ms) */
   function rebalance(){
     var w=window.innerWidth, n=w<=540?1:(w<=860?2:3);
-    var all=src;
     var buckets=[];for(var i=0;i<n;i++)buckets.push([]);
-    all.forEach(function(el,i){buckets[i%n].push(el)});
-    for(var c=0;c<3;c++){
-      var t=tracks[c]; t.innerHTML='';
-      if(c>=n) continue;
+    src.forEach(function(el,i){buckets[i%n].push(el)});
+    colEls.forEach(function(col,c){
+      var t=col.querySelector('.rv-track'); t.innerHTML='';
+      state[c].pos=0; col.scrollTop=0;
+      if(c>=n) return;
       buckets[c].forEach(function(el){t.appendChild(el.cloneNode(true))});
-      if(!reduce) buckets[c].forEach(function(el){var k=el.cloneNode(true);k.setAttribute('aria-hidden','true');t.appendChild(k)});
-      t.style.setProperty('--dur',(buckets[c].length*(n===1?6:7)+ c*5)+'s');
-    }
+      buckets[c].forEach(function(el){var k=el.cloneNode(true);k.setAttribute('aria-hidden','true');t.appendChild(k)});
+      state[c].speed=(n===1?40:32)+c*3; /* 초당 px — 이전보다 조금 빠르게 */
+    });
+  }
+  function half(col){var t=col.querySelector('.rv-track');return (t.scrollHeight-80+16)/2;}
+  function wrap(c){
+    var col=colEls[c], h=half(col); if(h<=0) return;
+    if(col.scrollTop>=h+40){col.scrollTop-=h;}
+    else if(col.scrollTop<=1){col.scrollTop+=h;}
+    state[c].pos=col.scrollTop;
+  }
+  colEls.forEach(function(col,c){
+    function touch(){state[c].hold=performance.now()+RESUME;state[c].user=true;}
+    ['pointerdown','touchstart','wheel','keydown'].forEach(function(ev){col.addEventListener(ev,touch,{passive:true})});
+    ['pointerup','touchend','pointercancel'].forEach(function(ev){col.addEventListener(ev,function(){state[c].hold=performance.now()+RESUME},{passive:true})});
+    col.addEventListener('scroll',function(){ if(state[c].user && performance.now()<state[c].hold){ wrap(c); state[c].hold=performance.now()+RESUME; } },{passive:true});
+    col.setAttribute('tabindex','0');
+  });
+  var lastT=0;
+  function tick(t){
+    var dt=lastT?Math.min((t-lastT)/1000,0.1):0; lastT=t;
+    colEls.forEach(function(col,c){
+      if(col.offsetParent===null) return;
+      var s=state[c];
+      if(t<s.hold) return;
+      if(s.user){ s.user=false; s.pos=col.scrollTop; }
+      var h=half(col); if(h<=0) return;
+      s.pos+=s.speed*dt;
+      if(s.pos>=h+40) s.pos-=h;
+      col.scrollTop=s.pos;
+    });
+    requestAnimationFrame(tick);
   }
   var last=-1;
   function onResize(){var w=window.innerWidth,n=w<=540?1:(w<=860?2:3);if(n!==last){last=n;rebalance()}}
   onResize(); window.addEventListener('resize',onResize);
+  colEls.forEach(function(col,c){ state[c].pos=40; col.scrollTop=40; });
+  if(!reduce) requestAnimationFrame(tick);
 
   /* 이미지 크게 보기 */
   var lb=document.getElementById('lb'), img=document.getElementById('lb-img');

@@ -308,6 +308,10 @@ footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:cent
 .sub-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-top:8px}
 .sub-head h4{margin:0;font-family:var(--display);font-size:22px;font-weight:900;color:var(--c)}
 .sub-head span{color:var(--muted);font-size:14px;font-weight:700}
+.core{background:var(--c-soft);border-left:5px solid var(--c);border-radius:16px;padding:24px 28px;display:grid;gap:10px}
+.core h4{margin:0;font-family:var(--display);font-size:clamp(20px,3vw,26px);font-weight:900;line-height:1.4;color:var(--ink)}
+.core p{color:var(--muted)}
+.core p b{color:var(--ink)}
 .new-badge{display:inline-block;vertical-align:middle;margin-left:6px;padding:2px 8px;border-radius:999px;background:var(--c);color:var(--surface);font-family:var(--num);font-size:11px;font-weight:700;letter-spacing:.06em}
 .part-note{font-size:14px;color:var(--muted);margin-bottom:12px}
 .part ol li div{min-width:0}
@@ -578,9 +582,15 @@ footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:cent
         <div class="price"><div class="won">100<small>만원</small></div><div class="vat">10시간 · 부가세 별도</div></div>
       </div>
       <div class="facts">
-        <div class="fact"><span class="k">네이버 파트너스데이</span><span class="v">소속 강사로 활동</span></div>
-        <div class="fact"><span class="k">네이버 예약 10주년 행사</span><span class="v">전국 단 한 곳, 대표 매장으로 인터뷰 · 기사화</span></div>
-        <div class="fact"><span class="k">어반트랜드 본점</span><span class="v">10년 넘게 신규고객 매달 평균 400~500명 유입</span></div>
+        <div class="fact"><span class="k">2016년 · 네이버 파트너스데이 / 파트너스퀘어</span><span class="v">소속 강사로 활동</span></div>
+        <div class="fact"><span class="k">네이버 예약 10주년 행사</span><span class="v">10년 누적 데이터 전국 1위, 전국 단 한 곳 대표 매장으로 인터뷰 · 기사화</span></div>
+        <div class="fact"><span class="k">어반트랜드 본점</span><span class="v">10년 넘게 신규고객 매달 평균 300~400명 유입 (최소 기준)</span></div>
+      </div>
+      <div class="core">
+        <span class="eyebrow">이 교육의 핵심</span>
+        <h4>직원들에게 더 이상 마케팅을 시키지 마세요.<br>이제는 원장님이 직접 하셔야 합니다.</h4>
+        <p>직원들은 원장님만큼 열심히 마케팅을 해주지 않습니다. 직원이 알아서 열심히 해주던 시대는 끝났습니다.</p>
+        <p>원장님에게 신규 고객을 모을 수 있는 경쟁력이 있어야 <b>구인도 쉬워지고, 직원들의 이탈도 막을 수 있습니다.</b> 손님을 데려올 수 있는 원장 밑으로 디자이너가 모이고, 남습니다.</p>
       </div>
       <div class="sched box">
         <h4>교육 시간 (총 10시간)</h4>
@@ -592,7 +602,7 @@ footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:cent
       <div class="sub-head"><h4>커리큘럼</h4><span>채널 마케팅 · 영상 · 광고 타겟팅 · AI 마케팅 자동화</span></div>
       <div class="part-grid">
         <div class="part"><header><span class="pn">1</span><h4>채널 마케팅 기본기</h4></header>
-          <ul><li>네이버 블로그 운영</li><li>네이버 플레이스 관리</li><li>네이버 카페 침투 마케팅</li><li>당근마켓 비즈니스 프로필 관리</li><li>오프라인 마케팅 전략</li></ul></div>
+          <ul><li>인스타그램 계정 세팅과 운영 방법</li><li>네이버 블로그 운영</li><li>네이버 플레이스 관리</li><li>네이버 카페 침투 마케팅</li><li>당근마켓 비즈니스 프로필 관리</li><li>오프라인 마케팅 전략</li></ul></div>
         <div class="part"><header><span class="pn">2</span><h4>영상 마케팅</h4></header>
           <ul><li>영상 기획 — 무엇을, 왜 찍을지</li><li>영상 촬영 — 매장에서 바로 찍는 법</li><li>영상 편집 — 처음 해도 끝까지 완성하는 편집</li></ul></div>
         <div class="part"><header><span class="pn">3</span><h4>광고 세팅 · 상세 타겟팅</h4></header>
@@ -601,13 +611,14 @@ footer.foot{padding-block:28px;font-size:13px;color:var(--muted);text-align:cent
           <p class="part-note">이번 교육부터 새로 추가되는 과정입니다. 한 번 세팅해 두면 매일 알아서 돌아가는 시스템을 만들어 드립니다.</p>
           <ol>
             <li><span>01</span><div><b>AI 콘텐츠 기획</b><br>주제 설정, 스토리보드 제작, 대본 작성, 장면 구성까지</div></li>
-            <li><span>02</span><div><b>영상 자동 편집</b><br>자동으로 편집하고, 템플릿으로 나와서 직접 수정도 가능</div></li>
-            <li><span>03</span><div><b>영상 자동 업로드</b><br>유튜브 · 인스타 · 틱톡 · 클립 · 스레드에 한 번에 올리는 매크로, 원하는 시간 예약 발행과 원하는 댓글 작성까지</div></li>
-            <li><span>04</span><div><b>네이버 블로그 완전 자동화</b><br>콘텐츠 · 사진 수집, 자동 작성 및 수정, 원하는 날짜에 원하는 수량만큼 예약 업로드</div></li>
-            <li><span>05</span><div><b>플레이스 리뷰 답글 관리</b><br>손님이 쓴 리뷰 문맥에 맞춰 AI 티가 최대한 안 나는 SEO 최적화 답글</div></li>
-            <li><span>06</span><div><b>월간 프로모션 기획</b><br>매월 정한 날짜에 다음 달 프로모션을 추천받고, 하고 싶은 기획은 제작까지</div></li>
-            <li><span>07</span><div><b>매일 아침 마케팅 보고</b><br>전날 진행한 마케팅 내역을 카톡으로 자동 보고</div></li>
-            <li><span>08</span><div><b>광고 운영 · 성과 보고</b><br>진행 중인 광고의 운영 현황과 성과를 카톡으로 계속 자동 보고</div></li>
+            <li><span>02</span><div><b>캐러셀 · 카드뉴스 제작</b><br>미용실 · 헤어디자이너에 맞는 인스타 캐러셀과 카드뉴스를 AI로 만드는 방법</div></li>
+            <li><span>03</span><div><b>영상 자동 편집</b><br>자동으로 편집하고, 템플릿으로 나와서 직접 수정도 가능</div></li>
+            <li><span>04</span><div><b>영상 자동 업로드</b><br>유튜브 · 인스타 · 틱톡 · 클립 · 스레드에 한 번에 올리는 매크로, 원하는 시간 예약 발행과 원하는 댓글 작성까지</div></li>
+            <li><span>05</span><div><b>네이버 블로그 완전 자동화</b><br>콘텐츠 · 사진 수집, 자동 작성 및 수정, 원하는 날짜에 원하는 수량만큼 예약 업로드</div></li>
+            <li><span>06</span><div><b>플레이스 리뷰 답글 관리</b><br>손님이 쓴 리뷰 문맥에 맞춰 AI 티가 최대한 안 나는 SEO 최적화 답글</div></li>
+            <li><span>07</span><div><b>월간 프로모션 기획</b><br>매월 정한 날짜에 다음 달 프로모션을 추천받고, 하고 싶은 기획은 제작까지</div></li>
+            <li><span>08</span><div><b>매일 아침 마케팅 보고</b><br>전날 진행한 마케팅 내역을 카톡으로 자동 보고</div></li>
+            <li><span>09</span><div><b>광고 운영 · 성과 보고</b><br>진행 중인 광고의 운영 현황과 성과를 카톡으로 계속 자동 보고</div></li>
           </ol></div>
       </div>
       <div class="two">
